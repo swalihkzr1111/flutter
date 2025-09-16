@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:referpage/features/refer/presentation/widgets/invitewidget.dart';
 import 'package:referpage/features/refer/application/providers.dart';
 import 'package:referpage/features/refer/presentation/widgets/referrallist.dart';
@@ -20,7 +21,7 @@ class Referpage extends ConsumerWidget {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.all(12),
+              padding: EdgeInsets.all(12.r),
               child: Row(
                 children: [
                   IconButton(
@@ -34,18 +35,18 @@ class Referpage extends ConsumerWidget {
                     style: TextStyle(
                       color: const Color.fromARGB(255, 21, 77, 122),
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                     ),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsetsGeometry.symmetric(horizontal: 12),
+              padding: EdgeInsetsGeometry.symmetric(horizontal: 12.r),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(12.r),
                 ),
                 padding: EdgeInsets.all(16),
                 child: Column(
